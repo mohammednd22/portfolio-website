@@ -28,7 +28,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://portfolio-website-nine-zeta-38.vercel.app/Resume-Mohammed-Noureddine.pdf"
+            href="/Resume-Mohammed-Noureddine.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
