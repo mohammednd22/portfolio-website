@@ -28,7 +28,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="/Mohammed-Noureddine-Resume.pdf"
+            href="https://drive.google.com/file/d/1mQ0s1ZySNiiIo1eji0Li6Fh72ubCOFjs/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
