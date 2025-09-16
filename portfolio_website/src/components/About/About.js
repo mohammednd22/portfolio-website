@@ -23,7 +23,7 @@ function About() {
           </ScrollAnimation>
           <div className="AboutBio">
             <ScrollAnimation animateIn="fadeInLeft">
-              Hi, I'm <strong>Mohammed Noureddine</strong> — a Master's student in Computer Science at <strong>Northeastern University 🇺🇸</strong>, with a background in data and finance from the <strong>University of British Columbia 🇨🇦</strong>.
+              Hi, I'm <strong>Mohammed Noureddine</strong> — a Master's student in Computer Science at <strong>Northeastern University </strong>, with a background in data science and finance from the <strong>University of British Columbia</strong>.
             </ScrollAnimation>
   
             <div style={{ marginTop: "1rem" }} />

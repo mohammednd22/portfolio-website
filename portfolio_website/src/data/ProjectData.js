@@ -3,38 +3,62 @@ export const WorkList = [
   {
     img: "/shopify_logo.png",
     title: "Shopify",
-    description: "Built APIs and dynamic React UIs for Shopify Sidekick (AI assistant) and enhanced Shopify Magic (AI product recommendations), improving system scalability, reliability, and user adoption.",
-    tech_stack: ["Ruby", "ReactJS", "GraphQL", "TypeScript"],
+    description: [
+      "Built AI product recommendation features driving customer conversions",
+      "Developed GraphQL APIs and React components for AI chat assistants",
+      "Implemented comprehensive testing frameworks to reduce production bugs"
+    ],
+    tech_stack: ["JavaScript", "ReactJS", "GraphQL", "Playwright"],
   },
   {
     img: "/definity.png",
     title: "Definity Financial",
-    description: "Developed Python pipelines to automate financial reporting, streamlined SQL database operations, and optimized VBA-based forecasting models.",
-    tech_stack: ["Python", "SQL", "VBA"],
+    description: [
+      "Automated CapEx forecasting using Python and Pandas",
+      "Migrated legacy VBA tools to Python for improved processing speed",
+      "Built SQL queries and ETL pipelines for corporate banking datasets"
+    ],
+    tech_stack: ["Python", "Pandas", "SQL", "VBA"],
   },
   {
-    img: "/cm_contracting.png",
+    img: "/CM-logo.png",
     title: "C&M Contracting",
-    description: "Built a full-stack expense management platform with Spring Boot and React, including secure authentication and automated reporting features.",
-    tech_stack: ["Java", "Spring Boot", "ReactJS"],
+    description: [
+      "Built internal expense tracking system using SpringBoot",
+      "Developed secure React dashboard with JWT authentication",
+      "Created quotation generation system improving customer conversions"
+    ],
+    tech_stack: ["Java", "Spring Boot", "ReactJS", "JWT"],
   },
   {
     img: "/fraser_health.png",
     title: "Fraser Health",
-    description: "Developed Java-based analytics tools to improve financial forecasting accuracy and integrated SQL database systems for real-time reporting.",
-    tech_stack: ["Java", "SQL", "JDBC"],
+    description: [
+      "Built Java-based clinical data aggregation tool reducing reporting time",
+      "Optimized SQL queries in clinical reporting pipelines",
+      "Implemented comprehensive JUnit testing for pipeline reliability"
+    ],
+    tech_stack: ["Java", "SQL", "JUnit"],
   },
   {
     img: "/cmls.svg",
     title: "CMLS",
-    description: "Built Python and PySpark data pipelines to clean, process, and analyze large real estate finance datasets for predictive modeling.",
-    tech_stack: ["Python", "SQL", "PySpark"],
+    description: [
+      "Managed CMBS loan portfolios using SQL for data analysis",
+      "Developed VBA-based tools for portfolio risk assessment",
+      "Generated reports on loan performance metrics and portfolio health"
+    ],
+    tech_stack: ["SQL", "VBA", "Excel"],
   },
   {
     img: "/ubc.png",
     title: "University of British Columbia",
-    description: "Conducted research and analysis using Python and SQL, focusing on data-driven insights in finance and operational analytics projects.",
-    tech_stack: ["Python", "SQL"],
+    description: [
+      "Analyzed medical expenses and capital expenditure data for budget planning",
+      "Processed data for practicum and co-op placement programs",
+      "Developed reporting systems to track student placement outcomes"
+    ],
+    tech_stack: ["Python", "SQL", "Excel"],
   }
 ];
 
@@ -43,36 +67,49 @@ export const WorkList = [
 // --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/dental_image.jpg",
+    img: "/dental-logo.jpg",
     title: "Dental Management System",
-    description: "Built a full-stack system for appointments, billing, and records, with authentication, a modern UI, and an AI chatbot for dental note summaries.",
-    tech_stack: ["TypScript", "GraphQL", "ExpressJS", "ReactJS", "MongoDB"],
+    description: [
+      "Built full-stack platform with patient record management and appointment scheduling",
+      "Implemented role-based authentication and automated billing system",
+      "Integrated AI-powered chatbot to summarize clinical notes and reduce review time"
+    ],
+    tech_stack: ["TypeScript", "GraphQL", "ExpressJS", "ReactJS", "MongoDB"],
     github_url: "",
     demo_url: "",
   },
   {
-    img: "/fifa_image.png",
+    img: "/FIFA-logo.png",
     title: "FIFA Match Predictor",
-    description: "Trained a machine learning model to predict game outcomes, deployed a Flask API for real-time predictions, and managed data with MySQL.",
+    description: [
+      "Trained machine learning model to predict FIFA match outcomes",
+      "Built Flask API endpoints for real-time match predictions",
+      "Implemented data processing pipeline with MySQL database integration"
+    ],
     tech_stack: ["Python", "Scikit-learn", "Flask", "MySQL"],
     github_url: "",
     demo_url: "",
-
   },
   {
-    img: "/market_insights_image.jpg",
+    img: "/finance-agent.png",
     title: "Financial Market Insights Agent",
-    description: "Built a multi-agent system using real-time data and LLMs to deliver market insights and analyst recommendations through a FastAPI service.",
-    tech_stack: ["Python", "FastAPI", "OpenAPI", "PhiData"],
+    description: [
+      "Built multi-agent system for automated stock analysis and market trend tracking",
+      "Implemented real-time data retrieval and LLM integration for financial insights",
+      "Delivered analyst recommendations through scalable FastAPI service"
+    ],
+    tech_stack: ["Python", "FastAPI", "OpenAI", "Phidata"],
     github_url: "",
     demo_url: "",
-
   },
   {
-    img: "/real_estate.jpeg",
+    img: "/real-estate-logo.webp",
     title: "StaySwift",
-    description:
-      "A real estate app built with the MERN stack for managing and discovering short-term rental properties, featuring advanced search filters and communication tools.",
+    description: [
+      "Built MERN stack application for short-term rental property management",
+      "Implemented advanced search filters and property discovery features",
+      "Developed real-time communication tools between hosts and guests"
+    ],
     tech_stack: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
     github_url: "",
     demo_url: "",
@@ -80,26 +117,35 @@ export const ProjectList = [
   {
     img: "/movie_library.jpeg",
     title: "Online Movie Library",
-    description:
-      "A MERN stack-based online movie library that allows users to browse films, select favorites, and read and submit reviews.",
+    description: [
+      "Built MERN stack movie browsing platform with user favorites system",
+      "Implemented review submission and rating functionality",
+      "Created responsive UI for seamless movie discovery experience"
+    ],
     tech_stack: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
     github_url: "",
     demo_url: "",
   },
   {
-    img: "/grocery_store.png",
+    img: "/grocery-store-fruit.png",
     title: "Backend Online Grocery System",
-    description:
-      "A backend online grocery store system built with SpringBoot, providing efficient handling of product inventory, user management, and order processing.",
+    description: [
+      "Built SpringBoot backend for grocery store operations",
+      "Implemented product inventory management and user authentication",
+      "Developed order processing system with efficient data handling"
+    ],
     tech_stack: ["Java", "Spring Boot"],
     github_url: "",
     demo_url: "",
   },
   {
-    img: "/gomoku_image.jpeg",
-    title: "Gomoku",
-    description:
-      "A Gomoku game developed using Python and Processing3, featuring an interactive board for strategic gameplay and player competition.",
+    img: "/pacman-logo.png",
+    title: "Pacman Game",
+    description: [
+      "Developed classic Pacman arcade game with object-oriented design",
+      "Implemented collision detection, scoring system, and ghost AI behavior",
+      "Built interactive user interface with real-time gameplay controls"
+    ],
     tech_stack: ["Python", "Processing3"],
     github_url: "",
     demo_url: "",
