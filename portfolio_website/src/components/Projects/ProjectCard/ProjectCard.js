@@ -66,7 +66,7 @@ const FrontTitle = styled.h4`
 
 // Project image container for front face
 const ImageContainer = styled.div`
-  height: 160px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
