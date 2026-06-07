@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { NA_COUNTRIES, NA_CITIES, NA_VIEWBOX } from "@/lib/na-paths";
 import { Reveal } from "./Reveal";
 
@@ -37,36 +36,23 @@ export function PlacesMap() {
                   <path
                     key={c.id}
                     d={c.d}
-                    fill="var(--color-fg)"
+                    fill="#0a1628"
                     fillOpacity={0.07}
-                    stroke="var(--color-border-strong)"
+                    stroke="#d4d4d8"
                     strokeWidth={0.9}
                     strokeLinejoin="round"
                   />
                 ))}
               </g>
 
-              {/* City markers */}
+              {/* City markers — plain SVG, no framer-motion. SMIL pulse only. */}
               {NA_CITIES.map((city, i) => {
-                const color = city.isCurrent
-                  ? CURRENT_COLOR
-                  : "var(--color-accent)";
-                // Push labels of cities clustered in pairs apart from each other.
-                // Vancouver above its dot, Seattle below; Ottawa above, Toronto below.
-                const labelBelow = city.name === "Seattle" || city.name === "Toronto";
+                const color = city.isCurrent ? CURRENT_COLOR : "#14213d";
+                const labelBelow =
+                  city.name === "Seattle" || city.name === "Toronto";
 
                 return (
-                  <motion.g
-                    key={city.name}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, amount: 0 }}
-                    transition={{
-                      delay: 0.2 + i * 0.12,
-                      duration: 0.55,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                  >
+                  <g key={city.name}>
                     {/* Animated ping */}
                     <circle
                       cx={city.x}
@@ -98,7 +84,7 @@ export function PlacesMap() {
                       cx={city.x}
                       cy={city.y}
                       r={city.isCurrent ? 7 : 5.5}
-                      fill="var(--color-bg)"
+                      fill="#ffffff"
                       stroke={color}
                       strokeWidth={1.5}
                     />
@@ -112,13 +98,13 @@ export function PlacesMap() {
                     {/* City name */}
                     <text
                       x={city.x}
-                      y={labelBelow ? city.y + 22 : city.y - 14}
+                      y={labelBelow ? city.y + 26 : city.y - 16}
                       textAnchor="middle"
-                      fontFamily="var(--font-mono)"
-                      fontSize={12}
+                      fontFamily="ui-monospace, 'SF Mono', Menlo, monospace"
+                      fontSize={16}
                       fontWeight={600}
-                      fill="var(--color-fg)"
-                      letterSpacing={1.4}
+                      fill="#0a1628"
+                      letterSpacing={1.6}
                     >
                       {city.name.toUpperCase()}
                     </text>
@@ -127,10 +113,10 @@ export function PlacesMap() {
                     {city.isCurrent && (
                       <text
                         x={city.x}
-                        y={city.y + 36}
+                        y={city.y + 42}
                         textAnchor="middle"
-                        fontFamily="var(--font-mono)"
-                        fontSize={9}
+                        fontFamily="ui-monospace, 'SF Mono', Menlo, monospace"
+                        fontSize={12}
                         fontWeight={600}
                         fill={CURRENT_COLOR}
                         letterSpacing={1.8}
@@ -138,7 +124,7 @@ export function PlacesMap() {
                         ● CURRENT
                       </text>
                     )}
-                  </motion.g>
+                  </g>
                 );
               })}
             </svg>
